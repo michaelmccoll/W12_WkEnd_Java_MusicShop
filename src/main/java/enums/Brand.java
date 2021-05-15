@@ -4,7 +4,7 @@ public enum Brand {
     YAMAHA,
     ROLAND,
     CASIO,
-    GIBSION,
+    GIBSON,
     PEARL,
     STAGG,
     FENDER

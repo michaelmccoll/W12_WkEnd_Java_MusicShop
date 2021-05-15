@@ -32,4 +32,10 @@ public class PianoTest {
     public void canGetKeyAction(){
         assertEquals("Hammer",piano1.getKeyAction());
     }
+
+    @Test
+    public void canCalculatePianoMarkup(){
+        assertEquals(500,piano1.calculateMarkup());
+    }
 }
+
