@@ -67,4 +67,19 @@ public class MusicShopTest {
     public void canCountAccessoryStock(){
         assertEquals(5,shop.getAccessories().size());
     }
+
+    @Test
+    public void canCalculatePotentialInstrumentProfit(){
+        assertEquals(1950,shop.calculateInstrumentProfits());
+    }
+
+    @Test
+    public void canCalculatePotentialAccessoryProfit(){
+        assertEquals(71,shop.calculateAccessoryProfits());
+    }
+
+    @Test
+    public void canCalculatePotentialTotalProfit(){
+        assertEquals(2021,shop.calculateAccessoryProfits()+ shop.calculateInstrumentProfits());
+    }
 }

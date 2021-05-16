@@ -56,4 +56,20 @@ public class MusicShop {
     public void setTill(int till) {
         this.till = till;
     }
+
+    public int calculateInstrumentProfits() {
+        int totalIntProfit = 0;
+        for (Instrument instrument : this.instruments){
+            totalIntProfit = totalIntProfit + instrument.calculateMarkup();
+        }
+        return totalIntProfit;
+    }
+
+    public int calculateAccessoryProfits() {
+        int totalAccProfit = 0;
+        for (Accessory accessory : this.accessories){
+            totalAccProfit = totalAccProfit + accessory.calculateMarkup();
+        }
+        return totalAccProfit;
+    }
 }
